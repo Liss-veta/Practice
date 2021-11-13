@@ -1,0 +1,365 @@
+html{
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/fon.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    width: 90%;
+    background-color: rgb(219, 153, 133);
+    border-bottom: 1px solid #885f53;
+}
+
+input {
+    outline: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+/*-------------------header----------------------*/
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+
+header {
+    width: 90%;
+    height: 90px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-rows: 1fr;
+    background-color: rgba(128, 76, 56, 0.8);
+}
+
+
+.auto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auto p, .auto a {
+    color: rgb(203, 152, 133);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.katalog {
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu a {
+    color: rgb(203, 152, 133);
+    padding: 12px 16px;
+    display: block;
+    font-size: 18px;
+}
+
+.punkt_menu {
+    color: rgb(219, 153, 133);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.menu a:hover {
+    background-color: rgb(105, 61, 28);
+}
+
+.katalog:hover .menu{
+    display: block;
+}
+
+a:hover {
+    border-bottom: 2px solid rgb(220, 142, 142);
+}
+
+
+/*-----------------------------------------------*/
+.search {
+    margin-top: 20px;
+    height: 320px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+
+.search div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+h1 {
+    font-size: 100px;
+    grid-area: h1;
+    font-weight: bold;
+    margin: 0 0 30px;
+}
+
+.nav-search {
+    background-color: rgb(213, 81, 33);
+    padding: 5px 2px 5px 25px;
+    color: rgb(150, 31, 49);
+    width: 300px;
+    height: 40px;
+    border: none;
+    box-shadow: 0 0 5px;
+}
+
+.nav-search::placeholder {
+    color: rgb(219, 153, 133);
+}
+
+.button_search {
+    width: 200px;
+    height: 40px;
+    background-color: rgb(150, 31, 49);
+    border: none;
+}
+
+/* -------------------avtor----------------------- */
+
+.avtor {
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    text-align: center;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.avtor h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+.avtor h3 {
+    font-size: 30px;
+}
+
+.harakterist-css {
+    width: 70%;
+}
+
+.slider-avtorov {
+    display: grid;
+    grid-template-columns: 0.8fr 1fr 0.8fr;
+    grid-template-rows: 1fr;
+}
+
+.slider-avtorov div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itk-slider {
+    width: 50%;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 0.5fr 1fr 0.5fr ;
+    text-align: center;
+}
+
+.itk-slider button {
+    width: 100%;
+    height: 300px;
+    background-color: rgba(245, 171, 137, 0.1);
+    border: none;
+    font-size: 48px;
+}
+
+.itk-slider button:hover {
+    background-color: rgba(128, 76, 56, 0.5);
+}
+
+.slider-avtorov img {
+    width: 300px;
+    height: 300px;
+}
+
+#prev-img-container, #next-img-container{
+    border: none;
+}
+
+#prev-img-container img, #next-img-container img{
+    opacity: 0.4;
+}
+
+
+/*----------------Регистрируйтесь----------------*/
+
+.registriruites {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0 30px 0;
+    margin: 0;
+}
+
+.registriruites h2 {
+    margin: 5px;
+    padding: 0;
+}
+
+.registriruites a {
+    font-weight: bold;
+    font-size: 28px;
+    color: #5d1818;
+}
+
+.registriruites a:hover {
+    border-bottom: 2px solid #061348;
+    color: darkred;
+}
+
+
+/*-----------------komment---------------------*/
+
+.komment {
+    text-align: center;
+}
+
+.flex_comm {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.comm {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.kommentarii {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+.kommentarii div {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.kommentarii input {
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid brown;
+    height: 30px;
+    background-color: rgba(187, 93, 64, 0.5);
+    text-align: center;
+    box-shadow: 2px 2px #5d1818;
+    outline: none;
+}
+
+textarea {
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid brown;
+    background-color: rgba(187, 93, 64, 0.5);
+    text-align: center;
+    box-shadow: 2px 2px #5d1818;
+    outline: none;
+}
+
+.comm button {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(150, 31, 49);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d04c2f;
+}
+
+
+footer {
+    height: 100px;
+    width: 90%;
+    background-color: rgba(128, 76, 56, 0.8);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 25px;
+    color: rgb(203, 152, 133);
+}
+
+
+
+
+
